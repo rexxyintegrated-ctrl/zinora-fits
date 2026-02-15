@@ -46,7 +46,7 @@ function Navbar() {
       <div className="text-xl tracking-widest font-serif">ZINORA FITS</div>
 
       <div className="hidden md:flex gap-8 text-sm tracking-wide">
-        <a href="#" className="hover:text-[#B8963D] transition">
+        <a href="/shop" className="hover:text-[#B8963D] transition">
           SHOP
         </a>
         <a href="#" className="hover:text-[#B8963D] transition">
