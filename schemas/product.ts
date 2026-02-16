@@ -1,4 +1,6 @@
 import { defineType, defineField } from "sanity";
+import product from "./product";
+export const schemaTypes = [product];
 
 export default defineType({
   name: "product",

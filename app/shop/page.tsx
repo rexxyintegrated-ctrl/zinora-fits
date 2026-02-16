@@ -5,7 +5,8 @@ async function getProducts() {
   return await client.fetch(`*[_type == "product"]{
     _id,
     name,
-    price
+    price,
+    "slug": slug.current
   }`);
 }
 
@@ -22,6 +23,7 @@ export default async function Shop() {
             key={product._id}
             name={product.name}
             price={`₦${product.price.toLocaleString()}`}
+            slug={product.slug}
           />
         ))}
       </div>
